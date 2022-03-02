@@ -19,6 +19,9 @@
 </template>
 
 <script>
+  // 引入公共的js文件
+  // import { debounce } from '../../common/utils.js'
+
   // 引入公共的组件
   import NavBar from '../../components/common/navbar/NavBar.vue'
   import tabControl from '../../components/content/tabControl/tabControl.vue'
@@ -73,7 +76,7 @@
     mounted() {
       // 3.监听item中图片加载完成
       this.$bus.$on('itemImageLoad', () => {
-      this.$refs.scroll.refresh()
+        this.$refs.scroll.refresh()
       })
     },
 
@@ -147,7 +150,8 @@
 
            this.$refs.scroll.finishPullUp()
          })
-       }
+       },
+      
     }
   }
 </script>

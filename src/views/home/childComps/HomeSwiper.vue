@@ -25,7 +25,7 @@
       Swiper,
       SwiperItem
     },
-    
+
   }
 </script>
 
